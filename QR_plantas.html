@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generación de QR de Plantas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Agrega la biblioteca qrcode-generator si no lo has hecho ya -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generación de QR de Plantas</h1>
+        <div class="form-group">
+            <label for="invernadero">Seleccionar Invernadero:</label>
+            <select id="invernadero" name="invernadero">
+                <option value="invernadero1">Invernadero 1</option>
+                <option value="invernadero2">Invernadero 2</option>
+                <!-- Agrega más opciones de invernaderos si es necesario -->
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Número de Cuadrantes: <span id="numero-cuadrantes"></span></p>
+            <p>Número de Zurcos por Cuadrante: <span id="zurcos-cuadrante"></span></p>
+            <p>Número de Plantas por Zurco: <span id="plantas-zurco"></span></p>
+            <p>Total de Zurcos: <span id="total-zurcos"></span></p>
+        </div>
+        <button id="generate-qr-button">Generar QR por Número de Planta</button>
+        <div class="form-group" id="qrcode"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

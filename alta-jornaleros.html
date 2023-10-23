@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alta de Jornaleros</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Agrega la biblioteca qrcode-generator -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-group">Registro de Jornaleros</h1>
+
+        <form id="registro-jornaleros-form">
+            <div class="form-group">
+                <label for="foto">Cargar foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-inicio-trabajo">Fecha de Inicio de Trabajo:</label>
+                <input type="date" id="fecha-inicio-trabajo" name="fecha-inicio-trabajo" required>
+            </div>
+            <div class="form-group">
+                <label for="especialidad">Especialidad:</label>
+                <select id="especialidad" name="especialidad">
+                    <option value="agricultura">Agricultura</option>
+                    <option value="horticultura">Horticultura</option>
+                    <option value="jardineria">Jardinería</option>
+                </select>
+            </div>
+            <button type="submit">Registrar</button>
+            <!-- Agrega la sección de generación de QR debajo del formulario -->
+            <div class="form-group">
+                <label for="curp">Número de Identificación (CURP):</label>
+                <input type="text" id="curp" name="curp" required>
+            </div>
+            <div class="form-group">
+                <button id="generate-qr-button">Generar QR</button>
+            </div>
+            <div class="form-group">
+                <div id="qrcode"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

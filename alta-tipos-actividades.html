@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alta de Tipos de Actividades</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alta de Tipos de Actividades</h1>
+        <form id="alta-tipos-actividades-form">
+            <!-- Clave de la actividad generada automáticamente a partir del nombre -->
+            <div class="form-group">
+                <label for="nombre">Nombre de la Actividad:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="clave">Clave de la Actividad:</label>
+                <input type="text" id="clave" name="clave" disabled>
+            </div>
+            <button type="submit">Crear Tipo de Actividad</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

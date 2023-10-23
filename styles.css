@@ -1,0 +1,277 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#logo-container {
+    animation: fadeOuts forwards;
+}
+
+#app-logo {
+    animation: fadeIn 10s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#login-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#login-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#login-button, #scan-qr-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login-button:hover, #scan-qr-button:hover {
+    background-color: #0056b3;
+}
+
+
+/*ADMIN-MENU*/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+a:link, a:visited {
+    color: #22a38b;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #2188bb;
+}
+
+/* Estilos Encabezado */
+header {
+    display: flex; 
+    align-items: center; 
+}
+
+#logo {
+    width: 105px;
+    height: 105px;
+    border: 0; 
+    margin: 5px; 
+}
+
+nav {
+    display: flex; 
+    margin-left: 20px; 
+}
+nav a {
+    text-decoration: none; 
+    margin-right: 20px; 
+}
+
+
+/* Estilos de la barra de navegación (navbar) */
+.navbar {
+    background-color: hsl(76, 70%, 60%);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(49, 49, 49);
+    text-align: center;
+    padding: 23px 9px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #8cb73d;
+    color: black;
+}
+
+.header {
+    color: #ccc;
+}
+
+/* Estilos para la página de "Inicio" */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para las notificaciones */
+.notificaciones {
+    margin-top: 9px;
+    padding: 20px;
+    /* text-align:center; */
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notificaciones li {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* ALTA ESPECIALIDAD */
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(49, 49, 49);
+    text-align: center;
+    padding: 23px 9px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #8cb73d;
+    color: black;
+}
+
+.separator{
+    height: 100px;
+}
+
+.container {
+    width: 700px; /* Establece el ancho que desees */
+    height: 300px; /* Establece la altura que desees */
+    padding: 40px;
+}
+
+
+
+/*ALTAJORNALERO*/
+/* Estilos para el formulario de registro de jornaleros */
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario de registro de jornaleros */
+#registro-jornaleros-form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el título del formulario */
+#registro-jornaleros-form h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* Estilos para cada grupo de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para etiquetas de los campos del formulario */
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada de texto, fecha y teléfono */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos específicos para el campo "Nombre" */
+#nombre {
+    padding: 10px;
+}
+
+/* Estilos para botones */
+button[type="submit"],
+#generate-qr-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover,
+#generate-qr-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la sección de generación de QR */
+#qrcode {
+    margin: 20px 0;
+    text-align: center;
+}

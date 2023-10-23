@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alta de Invernaderos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alta de Invernaderos</h1>
+        <form id="alta-invernaderos-form">
+            <div class="form-group">
+                <label for="numero-invernadero">Número de Invernadero:</label>
+                <input type="text" id="numero-invernadero" name="numero-invernadero" required>
+            </div>
+            <div class="form-group">
+                <label for="cuadrantes">Cuadrantes:</label>
+                <select id="cuadrantes" name="cuadrantes">
+                    <option value="cuadrante1">Cuadrante 1</option>
+                    <option value="cuadrante2">Cuadrante 2</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zurcos">Zurcos por Cuadrantes:</label>
+                <select id="zurcos" name="zurcos">
+                    <option value="zurco1">Zurco 1</option>
+                    <option value="zurco2">Zurco 2</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="plantas-por-zurcos">Número de Plantas por Zurcos:</label>
+                <input type="text" id="plantas-por-zurcos" name="plantas-por-zurcos" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo-cultivo">Tipo de Cultivo:</label>
+                <select id="tipo-cultivo" name="tipo-cultivo">
+                    <option value="cultivo1">Cultivo 1</option>
+                    <option value="cultivo2">Cultivo 2</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fecha-cultivo">Fecha de Cultivo:</label>
+                <input type="date" id="fecha-cultivo" name="fecha-cultivo" required>
+            </div>
+            <div class="form-group">
+                <label for="responsable">Responsable:</label>
+                <select id="responsable" name="responsable">
+                    <option value="responsable1">Responsable 1</option>
+                    <option value="responsable2">Responsable 2</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
